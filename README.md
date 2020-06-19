@@ -5,6 +5,7 @@
 
 
 ---
+## Command to create self signed SSL Certificate JKS
 
 - cmd 관리자 권한 실행
 - jdk keytoo / bin 이동
@@ -13,8 +14,9 @@ keytool -genkey -alias https-example -storetype JKS -keyalg RSA -keysize 2048 -v
 
 - 비밀번호 입력
 - 이름,국가,도시 ..입력 후 y
-- 키 비밀번호 같은것으로 쓴건지 enter
+- 키 비밀번호 같은것으로 쓸건지 enter
 - .jks 프로젝트 /resource로 이동
+- https://localhost:8443/hello - returns 'hello world'
 
 ##
 Warning:
